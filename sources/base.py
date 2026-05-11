@@ -1,6 +1,6 @@
 import requests
 
-class Base:
+class BaseSource:
     """Every source inherits from this class"""
     TIMEOUT = 5
     def fetch(self):
