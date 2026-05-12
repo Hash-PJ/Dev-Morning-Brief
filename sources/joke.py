@@ -12,4 +12,4 @@ class JokeSource(BaseSource):
         if data.get('type') == 'single':
             return data.get('joke')
         if data.get('type')=='twopart':
-            return data.get('setup')+'\n||'+data.get('delivery')
+            return data.get('setup')+'\n'+data.get('delivery')

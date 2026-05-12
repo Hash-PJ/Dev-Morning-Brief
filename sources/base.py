@@ -3,7 +3,7 @@ import requests
 class BaseSource:
     """Every source inherits from this class"""
     TIMEOUT = 5
-    def fetch(self):
+    def fetch(self, *vars):
         raise NotImplementedError("Every source must implement fetch()")
 
     def get(self, url, params=None, headers=None):
